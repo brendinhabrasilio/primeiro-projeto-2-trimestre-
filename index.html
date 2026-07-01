@@ -48,19 +48,27 @@
                  <p class="artigo-autor"> por: Brenda Martins</p>
                 <p>bem vindos a o meu blog! aque vou compartilhas sobre os cuidados dos pet</p>
                 <button>💚 <samp>0</samp></button>
+                <button>👎 <samp>0</samp></button>
            </div>
             
        </main>
    </body>
    <script>
-          const botao = document.querySelector("button");
-          botao.addEventListener("click",botaoClicado);
+          const botoes = document.querySelectorAll("button");
 
-    function botaoClicado(){
+          botoes.forEach(function(botoes){
+             botao.addEventListener("click",botaoClicado);
+             
+             function botaoClicado(){
         console.log("fui clicado");
         let texto = botao.querySelector("samp");
         texto.textContent++;
-    }
+
+          }
+
+          )
+          
+
         
    </script>
 </html>
