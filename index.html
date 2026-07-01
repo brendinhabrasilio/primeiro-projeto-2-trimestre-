@@ -13,7 +13,7 @@
                 max-width: 800px;
                 margin: 0 auto;
                 padding: 16px;
-                border: 5px solid #e01818;
+                border: 5px solid #5979e0;
             }
             main {
                 background: #ffffff;
@@ -47,8 +47,18 @@
                 <h2>meu primeiro post</h2>
                  <p class="artigo-autor"> por: Brenda Martins</p>
                 <p>bem vindos a o meu blog! aque vou compartilhas sobre os cuidados dos pet</p>
+                <button>💚 <samp>0</samp></button>
            </div>
             
        </main>
    </body>
+   <script>
+    const botao = document.querySelector("button");
+    botao.addEventListener("click",botaoClicado);
+
+    fuction botaoClicado(){
+        console.log("fui clicado");
+    }
+        
+   </script>
 </html>
