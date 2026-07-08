@@ -1,73 +1,86 @@
 <!DOCTYPE html>
 <html lang="pr-br">
-   <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" 
-        content="width=device-width, initial-scale=1.0">
-        <title>blog</title>
-        <style>
-            header{
-                background-color:#7eebab;
-                color:#ffffff;
-                text-align:center ;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                border: 5px solid #5979e0;
-            }
-            main {
-                background: #ffffff;
-                color:#7eebab;
-                 max-width: 800px;
-                margin: 0 auto;
-                padding: 16px;
-                display: flex;
-            }
-            img{
-                width: 80px;
-                height: 80px; 
-            }
-            .artigo-autor {
-                font-weight: bold;
-            }
 
-        </style>
-   </head>
-   <body>
-       <header>
-            <h1>meu blog tech</h1>
-            <p>vou compartilha sobre 
-                os cuidados comos animais </p>
-       </header>
-       <main>
-            <img src="imagem.blog.png" alt="Ilustração fofa de um gato e um cachorro 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog</title>
+    <style>
+        header {
+            background-color: #7eebab;
+            color: #ffffff;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            border: 5px solid #5979e0;
+        }
+
+        main {
+            background: #ffffff;
+            color: #7eebab;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 16px;
+            display: flex;
+        }
+
+        img {
+            width: 80px;
+            height: 80px;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>meu blog tech</h1>
+        <p>vou compartilha sobre
+            os cuidados comos animais </p>
+    </header>
+    <main>
+        <img src="imagem.blog.png" alt="Ilustração fofa de um gato e um cachorro 
         sorrindo lado a lado, representando a saúde, o 
         bem-estar e os cuidados essenciais com animais de estimação.">
-           <div> 
-                <h2>meu primeiro post</h2>
-                 <p class="artigo-autor"> por: Brenda Martins</p>
-                <p>bem vindos a o meu blog! aque vou compartilhas sobre os cuidados dos pet</p>
-                <button>💚 <span>0</span></button>
-                <button>👎 <span>0</span></button>
-           </div>
-            
-       </main>
-   </body>
-   <script>
-          const botoes = document.querySelectorAll("button");
+        <div>
+            <h2>meu primeiro post</h2>
+            <p class="artigo-autor"> por: Brenda Martins</p>
+            <p>bem vindos a o meu blog! aque vou compartilhas sobre os cuidados dos pet</p>
+            <button>💚 <span>0</span></button>
+            <button>👎 <span>0</span></button>
+        </div>
+        <img src="imagem.blog.png" alt="Ilustração fofa de um gato e um cachorro 
+        sorrindo lado a lado, representando a saúde, o 
+        bem-estar e os cuidados essenciais com animais de estimação.">
+        <div>
+            <h2>meu primeiro post</h2>
+            <p class="artigo-autor"> por: Brenda Martins</p>
+            <p>bem vindos a o meu blog! aque vou compartilhas sobre os cuidados dos pet</p>
+            <button>💚 <span>0</span></button>
+            <button>👎 <span>0</span></button>
+        </div>
+    </main>
+</body>
+<script>
+    const botoes = document.querySelectorAll("button");
 
-          botoes.forEach(function(botoes){
-             botao.addEventListener("click",botaoClicado);
-             
-             function botaoClicado (){
-             console.log("fui clicado");
-             let texto = botao.querySelector("samp");
-             texto.textContent++;
+    botoes.forEach(function (botoes) {
+        botao.addEventListener("click", botaoClicado);
 
-          }
-       })
-          
+        function botaoClicado() {
+            console.log("fui clicado");
+            let texto = botao.querySelector("samp");
+            texto.textContent++;
 
-        
-   </script>
+        }
+    })
+
+
+
+</script>
+
 </html>
